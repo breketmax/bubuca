@@ -1,0 +1,64 @@
+:root {
+  font-family: Inter, sans-serif;
+
+  background-color: #131313;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --white:#FAFAFA;
+  --primary-color:#FF6E00;
+  --disable-color:#FAFAFA;
+  --gradient-background:linear-gradient(90deg, #D7650F 0%, #E1250A 100%);
+  --hover-shadow: 0px 8px 24px rgba(215, 101, 15, 0.7);
+  --active-background:linear-gradient(90deg, #853900 0%, #AA1500 100%);
+  --disable-background:linear-gradient(90deg, #8A8A8A 0%, #505050 100%);
+  --text-shadow:0px 8px 24px rgba(215, 101, 15, 0.7);
+}
+button{
+  background-color: transparent;
+  border: none;
+}
+button:hover{
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
